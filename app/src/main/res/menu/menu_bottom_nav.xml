@@ -2,18 +2,22 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:icon="@drawable/ic_menu_camera"
+        android:id="@+id/nav_home"
+        android:icon="@drawable/real_estate"
         android:title="@string/menu_home" />
 
     <item
-        android:icon="@drawable/ic_menu_gallery"
+        android:id="@+id/nav_pets"
+        android:icon="@drawable/pet_bottle"
         android:title="@string/menu_pets" />
 
     <item
-        android:icon="@drawable/ic_menu_slideshow"
+        android:id="@+id/nav_training"
+        android:icon="@drawable/calendar"
         android:title="@string/menu_schedule" />
     <item
-        android:icon="@drawable/ic_menu_slideshow"
+        android:id="@+id/nav_schedule"
+        android:icon="@drawable/dog"
         android:title="@string/menu_training" />
 
 </menu>
