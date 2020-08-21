@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.mypetsdiary.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_pets"
+        android:name="com.example.mypetsdiary.ui.pets.PetsFragment"
+        android:label="@string/title_pets"
+        tools:layout="@layout/fragment_pets" >
+        <action
+            android:id="@+id/action_nav_pets_to_newPetFragment"
+            app:destination="@id/newPetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_training"
+        android:name="com.example.mypetsdiary.ui.training.TrainingFragment"
+        android:label="@string/title_training"
+        tools:layout="@layout/fragment_training" />
+    <fragment
+        android:id="@+id/nav_schedule"
+        android:name="com.example.mypetsdiary.ui.schedule.ScheduleFragment"
+        android:label="@string/title_schedule"
+        tools:layout="@layout/fragment_schedule" />
+    <fragment
+        android:id="@+id/newPetFragment"
+        android:name="com.example.mypetsdiary.ui.newpet.NewPetFragment"
+        android:label="fragment_new_pet"
+        tools:layout="@layout/fragment_new_pet" >
+        <argument
+            android:name="petId"
+            app:argType="long" />
+    </fragment>
+</navigation>
